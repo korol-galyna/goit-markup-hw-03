@@ -82,6 +82,30 @@ list-style: none;
 .link {
 margin:0px;
 padding:0px;
+display:flex;
+}
+
+
+.navigation-link {
+display:block;
+padding-top: 32px;
+padding-bottom: 32px;
+background-color: hotpink;
+}
+
+.link .link-navigation-link:not(:last-child){
+margin-right:50px;
+}
+
+.navigation-link2 {
+display:block;
+padding-top: 32px;
+padding-bottom: 32px;
+background-color: green;
+}
+
+.link .link-navigation-link2:not(:last-child){
+margin-right:50px;
 }
 
 .section-first {
