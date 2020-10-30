@@ -19,6 +19,8 @@ font-family: inherit;}
     
     
 .logo {
+margin-right:94px;
+
 font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
@@ -61,6 +63,7 @@ color: var(--grey-color);
 text-decoration: none;
 }
 
+
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-link2:hover,
@@ -71,6 +74,17 @@ color: var(--blue-color);}
 .navigation-link:active,
 .navigation-link2:active {
 color:var(--blue-color);
+}
+
+.main-header {
+display:flex;
+align-items:center;
+
+}
+
+.navigation-header {
+display:flex;
+align-items:center;
 }
 
 
@@ -85,12 +99,14 @@ padding:0px;
 display:flex;
 }
 
+.link{
+margin-left:auto;
+}
 
 .navigation-link {
 display:block;
 padding-top: 32px;
 padding-bottom: 32px;
-background-color: hotpink;
 }
 
 .link .link-navigation-link:not(:last-child){
@@ -101,7 +117,6 @@ margin-right:50px;
 display:block;
 padding-top: 32px;
 padding-bottom: 32px;
-background-color: green;
 }
 
 .link .link-navigation-link2:not(:last-child){
@@ -109,18 +124,22 @@ margin-right:50px;
 }
 
 .section-first {
+text-align:center;
 padding-top:200px;
 padding-bottom:200px;
-text-align: center;
 background-color: #2F303A;
+
+}
+
+.title {
+min-width:696px;
+text-align:center;
+outline: 2px solid red;
 }
 
 .title h1 {
-min-width:696px;
-min-height:120px;
 margin-bottom: 30px;
 margin-top:0px;
-
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -152,7 +171,6 @@ background-color: var(--blue-color);
 margin-top:0px;
 margin-bottom:10px;
 
-
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -163,6 +181,8 @@ list-style: none;
 
 .link1 {
 margin-top:0px;
+min-width:270px;
+min-height:75px;
 
 font-weight: 400;
 font-size: 14px;
@@ -170,6 +190,11 @@ line-height: 1.71;
 color: var(--grey-color);
 list-style: none;
 }
+
+.link-img:not(:last-child){
+margin-right:30px;
+}
+
 
 /*Наша команда*/
 .section-third {
@@ -181,15 +206,31 @@ padding-bottom:94px;
 
 .section-header {
 margin-top:0px;
+margin-left:auto;
+margin-right:auto;
 margin-bottom:50px;
-
 font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 color:var(--black-color);
 }
- .section-header-name {
+.cards {
+width:270px;
+height:368;
+background-color: var(--white-color);
+text-align:center;   
+}
+
+.cards:not(:last-child){
+margin-right:30px;
+}
+
+.img {
+margin-bottom:30px;
+}
+
+.section-header-name {
 margin-top:0px;
 margin-bottom:10px;
 
@@ -215,9 +256,20 @@ margin-bottom:30px;
 
 
 .section-second {
-padding-top: 94px;
+background-color: var(--white-color);
+margin-left:auto;
+margin-right:auto;
+padding-top:94px;
 padding-bottom:94px;
+width:1170px;
+}
 
+.link-section-second:not(:last-child){
+margin-right:30px;
+}
+
+.link .link-section-second {
+margin-bottom:94px;
 }
 
 /*footer*/
