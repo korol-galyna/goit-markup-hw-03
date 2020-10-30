@@ -13,28 +13,99 @@ body {
 button {
     font-family: inherit;}
 
+.conteiner {
+margin-left:auto;
+margin-right:auto;
+width:1170px;
+outline:2px solid red;
+margin-top:0px;
+}
+     
+.link {
+margin:0px;
+padding:0px;
+display:flex;
+list-style: none;
+}
+        
+.navigation, .section-first, .section-second,
+.section-third, .footer {
+width:1600px;
+margin-left:auto;
+margin-right:auto;
+outline:3px solid blue;
+}
+/*HEADER*/  
 
-/*LOGO (header / footer*/
-
+/*HEADER / FOOTER LOGO*/
 
 .logo {
+margin-right:94px;
 font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 text-decoration: none;
 }
-
+        
 .logo-color {
 color: var(--blue-color);}
-
+        
 .logo-color1 {
-    color:var(--black-color)}
-
+color:var(--black-color)}
+        
 .logo-color2 {
-    color: var(--white-color);}
+color: var(--white-color);}
+    
+/* HEADER LINKS*/
+    
+.navigation {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+text-decoration: none;
+list-style:none;
+}
+             
+.navigation-link {
+display:block;
+padding-top: 32px;
+padding-bottom: 32px;
+    
+color:var(--black-color);
+text-decoration: none;
+}
+    
+.navigation-link2 {
+color: var(--grey-color);
+text-decoration: none;
+}
+    
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-link2:hover,
+.navigation-link2:focus {
+color: var(--blue-color);}
+    
+.navigation-link:active,
+.navigation-link2:active {
+color:var(--blue-color);
+}
+    
+.main-header {
+display:flex;
+align-items:center;
+}
+    
+.navigation-header {
+display:flex;
+align-items:center;
+margin-right:331px;
+}
 
-/*header*/
+/*MAIN*/
+
+/*SECTION-FIRST*/
 
 .navigation {
 font-weight: 500;

@@ -36,9 +36,7 @@ margin-right:auto;
 outline:3px solid blue;
 }
 
-
-
-/*HEADER*/  
+                        /*HEADER*/  
 
 /*HEADER / FOOTER LOGO*/
     
@@ -107,7 +105,7 @@ align-items:center;
 margin-right:331px;
 }
 
-/*MAIN*/
+                            /*MAIN STUDIO*/
 
 /*SECTION-FIRST*/
 
@@ -273,8 +271,45 @@ color: var(--grey-color);
 .section-header img{
 margin-bottom:30px;
 }
+                        /*MAIN STUDIO*/
 
-/*FOOTER*/
+                        /*MAIN PORTFOLIO*/
+                                                     
+.button-portfolio {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
+color: var(--black-color);
+background-color: #F5F4FA;
+text-decoration: none;
+}
+                            
+.button:hover,
+.button:focus,
+.button:active{
+color:var(--white-color);
+background-color: var(--blue-color);
+}
+                            
+.main-navigation h3 {
+font-weight: 700;
+font-size: 18px;
+line-height: 2.00;
+color: var(--black-color);
+}
+                            
+.main-navigation p {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+color: var(--grey-color);
+}
+                            
+.link, .navigation-footer {
+list-style: none;
+}
+                            
+                          /*FOOTER*/
 
 .footer {
 background-color:#2F303A;
