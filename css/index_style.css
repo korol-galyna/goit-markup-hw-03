@@ -29,12 +29,12 @@ display:flex;
 list-style: none;
 }
 
-.navigation, .section-first, .section-second,
+/*.navigation, .section-first, .section-second,
 .section-third, .footer, .main-navigation {
 width:1600px;
 margin-left:auto;
 margin-right:auto;
-}
+}*/
 
                         /*HEADER*/  
 
@@ -42,7 +42,6 @@ margin-right:auto;
     
 .logo {
 margin-right:94px;
-
 font-family: Raleway;
 font-weight: 700;
 font-size: 26px;
@@ -67,7 +66,6 @@ font-size: 14px;
 line-height: 1.14;
 text-decoration: none;
 list-style:none;
-border: 1px solid #ECECEC;
 }
          
 .navigation-link {
@@ -90,8 +88,7 @@ text-decoration: none;
 .navigation-link2:focus {
 color: var(--blue-color);}
 
-.navigation-link:active,
-.navigation-link2:active {
+.navigation-link:active{
 color:var(--blue-color);
 }
 
@@ -114,8 +111,8 @@ margin-right:331px;
 text-align:center;
 padding-top:200px;
 padding-bottom:200px;
+margin-bottom:94px;
 background-color: #2F303A;
-border: 1px solid #ECECEC;
 }
 
 .title {
@@ -158,18 +155,17 @@ background-color: var(--blue-color);
 background-color: var(--white-color);
 margin-left:auto;
 margin-right:auto;
-padding-top:94px;
-padding-bottom:94px;
-border: 1px solid #ECECEC;
+margin-top:0px;
+margin-bottom:94px;
 }
     
 .link-section-second:not(:last-child){
 margin-right:30px;
 }
     
-.link .link-section-second {
+/*.link .link-section-second {
 margin-bottom:94px;
-}
+}*/
 
 .link .link-navigation-link:not(:last-child){
 margin-right:50px;
@@ -212,7 +208,10 @@ list-style: none;
 /*SECTION-HEADER*/
 .link-img:not(:last-child){
 margin-right:30px;
-}
+margin-bottom:0px;}
+
+.link-img {
+height:294px;}
 
 .section-header {
 margin-top:0px;
@@ -225,16 +224,19 @@ line-height: 1.17;
 text-align: center;
 color:var(--black-color);
 }
-    
+
+.section-header1 {
+margin-bottom:94px;
+}
+
 
 /*НАША КОМАНДА*/
 
 .section-third {
 background-color: #F5F4FA;
 padding-top:94px;
-padding-bottom:94px;
-border: 1px solid #ECECEC;
-}
+padding-bottom:94px;}
+
 
 .cards {
 width:270px;
@@ -255,7 +257,6 @@ margin-bottom:30px;
 .section-header-name {
 margin-top:0px;
 margin-bottom:10px;
-
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
@@ -264,8 +265,8 @@ color: var(--black-color);
 
 .section-header-name2 {
 margin-top:0px;
-margin-bottom:30px;
-
+margin-bottom:0px;
+padding-bottom:30px;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.19;
@@ -279,12 +280,14 @@ margin-bottom:30px;
 
                         /*MAIN PORTFOLIO*/
                               
-                        
+.main-navigation {
+margin-top: 94px;
+margin-bottom:94px;
+}
                         /*BUTTON SECTION*/
 
 .button-section {
-padding-top:94px;
-padding-bottom:50px;
+margin-bottom:50px;
 justify-content:center;
 }
 
@@ -331,10 +334,11 @@ padding-bottom:94px;
 .cards2 {
 width: 370px;
 background: var(--white-color);
-border: 1px solid #EEEEEE;
 margin-right:30px;
 margin-bottom:30px;
+border: 1px solid #ECECEC;
 }
+
 
 .cards2:nth-child(3n) {
 margin-right:0;
@@ -376,10 +380,11 @@ color: var(--grey-color);
 list-style: none;
 }
 
-.main-navigation {
-border: 1px solid #ECECEC;
+.cards-portfolio h3,
+.cards-portfolio p {
+margin-left:24px;
 }
-                            
+                           
                           /*FOOTER*/
 
 .footer {
@@ -425,8 +430,10 @@ text-decoration: none;
 }
 
 .navigation-footer-adress {
-margin-top:0px;
-margin-bottom:9px;
+margin-top:0px;}
+
+.navigation-footer-adress:not(:last-child){
+margin-bottom: 9px;
 }
 
 .logo-footer1 .logo {
