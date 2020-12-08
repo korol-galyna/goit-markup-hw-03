@@ -29,13 +29,6 @@ display:flex;
 list-style: none;
 }
 
-/*.navigation, .section-first, .section-second,
-.section-third, .footer, .main-navigation {
-width:1600px;
-margin-left:auto;
-margin-right:auto;
-}*/
-
                         /*HEADER*/  
 
 /*HEADER / FOOTER LOGO*/
@@ -66,6 +59,7 @@ font-size: 14px;
 line-height: 1.14;
 text-decoration: none;
 list-style:none;
+border: 1px solid #ECECEC;
 }
          
 .navigation-link {
@@ -163,10 +157,6 @@ margin-bottom:94px;
 margin-right:30px;
 }
     
-/*.link .link-section-second {
-margin-bottom:94px;
-}*/
-
 .link .link-navigation-link:not(:last-child){
 margin-right:50px;
 }
@@ -195,6 +185,7 @@ list-style: none;
 
 .link1 {
 margin-top:0px;
+margin-bottom:0px;
 min-width:270px;
 min-height:75px;
 
@@ -226,7 +217,7 @@ color:var(--black-color);
 }
 
 .section-header1 {
-margin-bottom:94px;
+padding-bottom:94px;
 }
 
 
@@ -281,8 +272,8 @@ margin-bottom:30px;
                         /*MAIN PORTFOLIO*/
                               
 .main-navigation {
-margin-top: 94px;
-margin-bottom:94px;
+padding-top: 94px;
+padding-bottom:94px;
 }
                         /*BUTTON SECTION*/
 
@@ -307,7 +298,7 @@ text-decoration: none;
 }
 
 .button-portfolio1:not(:last-child){
-margin-right:8px;
+padding-right:8px;
 }
 
 
@@ -325,20 +316,12 @@ background-color: var(--blue-color);
 flex-wrap:wrap;
 }
 
-.cards1 {
-margin-left:auto;
-margin-right:auto;
-padding-bottom:94px;
-}
-
 .cards2 {
 width: 370px;
 background: var(--white-color);
-margin-right:30px;
 margin-bottom:30px;
-border: 1px solid #ECECEC;
+margin-right:30px;
 }
-
 
 .cards2:nth-child(3n) {
 margin-right:0;
@@ -348,19 +331,33 @@ margin-right:0;
 margin-bottom:0px;
 }
 
-.img-cards2 {
-margin-bottom:20px;
+.cards2-img {
+display: block;
 }
 
-.cards-portfolio h3{
+.cards2-text {
+padding-left:24px;
+padding-right:24px;
+padding-bottom:20px;
+padding-top:20px;
+border: 1px solid #ECECEC;
+}
+
+.cards2-text h3{
+margin-top:0px;
 margin-bottom:4px;
-margin-top:0px;
 }
 
-.cards-portfolio p {
-margin-bottom:20px;
+.cards2-text p {
 margin-top:0px;
+margin-bottom:0px;
 }
+
+
+/*.cards-portfolio p {
+padding-bottom:20px;
+margin-top:0px;
+}*/
 
 .main-navigation h3 {
 font-weight: 700;
@@ -375,15 +372,15 @@ font-size: 16px;
 line-height: 1.88;
 color: var(--grey-color);
 }
-                            
+                   
 .link, .navigation-footer {
 list-style: none;
 }
 
-.cards-portfolio h3,
+/*.cards-portfolio h3,
 .cards-portfolio p {
-margin-left:24px;
-}
+padding-left:24px;
+}*/
                            
                           /*FOOTER*/
 
