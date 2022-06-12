@@ -63,7 +63,6 @@ body {
 /**HEADER*/
 
 .header {
-    background-color: var(--white-color);
     border: 1px solid #ECECEC;
 }
 
@@ -167,7 +166,6 @@ display: flex;
 
 .features-list {
     display: flex;
-    background-color: var(--white-color);
 }
 
 
@@ -217,10 +215,6 @@ display: flex;
     margin-bottom: 188px;
 }
 
-.works {
-    background-color: var(--white-color); 
-}
-
 .works-list li:not(:last-child) {
     margin-right:30px;
     }
@@ -245,10 +239,24 @@ img {
 }
 
 .team-list {
-    display:flex;
+    display:flex; 
 }
 
+.team-list li {
+    background-color: var(--white-color);
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+.team-list li:not(:last-child) {
+    margin-right:30px;
+    
+        }
+
 .team-list .third-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -256,6 +264,9 @@ img {
 }
 
 .team-list .text {
+    margin-top: 0px;
+    margin-bottom: 30px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -298,14 +309,22 @@ img {
 
 .footer {
     background-color: var(--bg-color-first);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
 }
 
 .footer .logo,
 .footer-address {
     color: var(--white-color);
+    display:inline-block;
+}
+.footer .logo {
+    margin-bottom: 0px;
 }
 
 .footer-address {
+   margin-top:20px;
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
@@ -314,6 +333,8 @@ img {
 }
 
 .footer-link {
+    display:inline-block;
+    margin-top:9px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
