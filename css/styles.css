@@ -13,16 +13,28 @@ body {
   background-color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
+  margin: 0;
 }
 
 .list {
-    list-style: none;}
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .decor {
     text-decoration: none;
 }
 
 .text {color: var(--text-color);}
+
+.conteiner {
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:15px;
+    padding-right:15px;
+    width:1200px;
+    margin-top:0px;}
 
 
 /**COMMON header and footer*/
@@ -50,17 +62,46 @@ body {
 
 /**HEADER*/
 
+.header {
+    background-color: var(--white-color);
+    border: 1px solid #ECECEC;
+}
+
+.header-navigation,
+.header-nav,
+.header-contact,
+.header .conteiner {
+display: flex;
+}
+ 
 .header .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     color: var(--black-color);
 }
 
-.header-navigation .link
- {
+.header-navigation li:not(:last-child),
+.header-contact li:not(:last-child){
+    margin-right: 50px;}
+
+.header-navigation {
+    margin-right: 331px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header-navigation .link {
+    
     color: var(--black-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header-contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-contact .link {
@@ -74,10 +115,21 @@ body {
 /**Section 1*/
 
 .section-hero {
+    padding-bottom:200px;
+    padding-top:200px;
+    margin-bottom:94px;
+
     background-color: var(--bg-color-first);
+    text-align: center;
 }
 
 .first-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left:auto;
+    margin-right:auto;
+    width:696px;
+
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 900;
@@ -88,6 +140,12 @@ body {
 }
     
 .button-primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    border:1px transparent;
+    min-width:200px;
+    text-align:center;
+
     font-family: Roboto, sans-serif;
     font-style: normal;
     cursor: pointer;
@@ -107,7 +165,20 @@ body {
     
 /**Section 2*/
 
+.features-list {
+    display: flex;
+    background-color: var(--white-color);
+}
+
+
+.features-list li:not(:last-child) {
+    margin-right:30px;
+    }
+
 .features-list .third-title {
+    margin-top:0px;
+    margin-bottom:10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -116,6 +187,9 @@ body {
 }
 
 .features-list .text {
+    margin-top:0px;
+    margin-bottom:94px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -125,6 +199,12 @@ body {
 /**Section 3*/
 
 .second-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    min-width:376px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -132,7 +212,41 @@ body {
     text-align: center;
 }
 
+.works-list {
+    display: flex;
+    margin-bottom: 188px;
+}
+
+.works {
+    background-color: var(--white-color); 
+}
+
+.works-list li:not(:last-child) {
+    margin-right:30px;
+    }
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /**Section 4*/
+
+.team {
+    background-color: var(--bg-color-second);
+}
+
+.team .second-title {
+    padding-top: 94px;
+    margin-bottom: 50px;
+    min-width: 264px;
+}
+
+.team-list {
+    display:flex;
+}
 
 .team-list .third-title {
     font-weight: 500;
