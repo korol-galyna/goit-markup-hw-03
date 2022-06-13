@@ -63,7 +63,7 @@ body {
 /**HEADER*/
 
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-navigation,
@@ -275,7 +275,27 @@ img {
 
 /**Section 5 - PORTFOLIO*/
 
+.portfolio-section {
+    padding-top:94px;
+    padding-bottom:94px;
+}
+
+.navigation-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom:50px;
+    margin-top:0px;}
+   
+.navigation-portfolio li:not(:last-child) {
+        margin-right:3px; 
+    }
+
 .button-second {
+    border-radius: 4px;
+    padding: 6px 22px;
+    border:1px transparent;
+    text-align:center;
+
     color: var(--black-color);
     background-color: var(--bg-color-second);
     font-family: Roboto, sans-serif;
@@ -291,18 +311,48 @@ img {
     color: var(--white-color);
     background-color: var(--blue-color);
   }
+
+   .works-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .works-portfolio li{
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    }
   
+   .works-portfolio li:nth-child(3n){
+        margin-right: 0px;
+    }
+
+    .works-portfolio li:nth-last-child(-n + 3){
+        margin-bottom: 0px;
+    }
+
+   .portfolio-card {
+    border: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+
   .works-portfolio .third-title {
+    margin-top: 0px;
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
   }
   .works-portfolio .text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
   }
 
 /**FOOTER*/
