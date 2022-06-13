@@ -212,7 +212,7 @@ display: flex;
 
 .works-list {
     display: flex;
-    margin-bottom: 188px;
+    padding-bottom: 94px;
 }
 
 .works-list li:not(:last-child) {
