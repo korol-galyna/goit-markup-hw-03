@@ -116,7 +116,6 @@ display: flex;
 .section-hero {
     padding-bottom:200px;
     padding-top:200px;
-    margin-bottom:94px;
 
     background-color: var(--bg-color-first);
     text-align: center;
@@ -166,16 +165,18 @@ display: flex;
 
 .features-list {
     display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
 .features-list li:not(:last-child) {
-    margin-right:30px;
+    margin-right: 30px;
     }
 
 .features-list .third-title {
-    margin-top:0px;
-    margin-bottom:10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 
     font-weight: 700;
     font-size: 14px;
@@ -185,8 +186,8 @@ display: flex;
 }
 
 .features-list .text {
-    margin-top:0px;
-    margin-bottom:94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -211,6 +212,9 @@ display: flex;
 
 .works-list {
     display: flex;
+    }
+
+.works {
     padding-bottom: 94px;
 }
 
@@ -228,10 +232,11 @@ img {
 
 .team {
     background-color: var(--bg-color-second);
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 
 .team .second-title {
-    padding-top: 94px;
     margin-bottom: 50px;
     min-width: 264px;
 }
@@ -242,19 +247,21 @@ img {
 
 .team-list li {
     background-color: var(--white-color);
-    margin-bottom: 94px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
 .team-list li:not(:last-child) {
-    margin-right:30px;
-    
+    margin-right:30px; 
+}
+
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-list .third-title {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 0px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -262,9 +269,8 @@ img {
 }
 
 .team-list .text {
+    margin-bottom: 0px;
     margin-top: 0px;
-    margin-bottom: 30px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -285,7 +291,7 @@ img {
     margin-top:0px;}
    
 .navigation-portfolio li:not(:last-child) {
-        margin-right:3px; 
+        margin-right: 8px; 
     }
 
 .button-second {
@@ -304,10 +310,18 @@ img {
     letter-spacing: 0.03em;
   }
   
-  .button-second:hover,
-  .button-second:focus {
+  .button-second:hover{
     color: var(--white-color);
     background-color: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+
+  .button-second:focus,
+  .button-second:active {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+
   }
 
    .works-portfolio {
