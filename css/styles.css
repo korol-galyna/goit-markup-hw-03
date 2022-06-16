@@ -162,11 +162,17 @@ display: flex;
 }
     
 /**Section 2*/
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .features-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
+}
+
+.features-list li {
+    width: 270px;
 }
 
 
